@@ -1,0 +1,30 @@
+{
+    "name": "example/my-app",
+    "description": "myApp - a minimal PHP project",
+    "type": "project",
+    "config": {
+    "platform": { 
+        "php": "8.2.32" 
+        },
+        "policy": {
+            "advisories": {
+                "block": false
+            }
+        }        
+    },
+    "require": {
+        "php": "8.2.32",
+        "guzzlehttp/guzzle": "6.5.5",
+        "firebase/php-jwt": "5.0.0",
+        "twig/twig": "1.35.0",
+        "ext-readline": "*",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-openssl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "src/"
+        }
+    }
+}
